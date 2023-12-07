@@ -12,7 +12,7 @@ const vitePluginMd = (opts?: MarkdownOptions): PluginOption => {
         const env: any = {}
         const html = md?.render(code, env)
         const { sfcBlocks } = env
-        sfcBlocks.scripts.push(script.md)
+        sfcBlocks.scripts.push(script.md(id))
         let list = [
           sfcBlocks?.scriptSetup ? sfcBlocks?.scriptSetup?.content : '',
           `<template><div :class="__cls" class="theme-default-content">${html}</div></template>

@@ -1,29 +1,31 @@
-const md = `{
-  data() {
-    return {
-      __cls: ''
-    }
-  },
-  mounted() {
-    const meta = this.$route.meta
-    if(meta){
-      this.__cls = meta.cls||''
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1)
+}
+const createScript = (id: string) => {
+  let md = `<script>
+  export default {
+    data() {
+      return {
+        __cls: ''
+      }
+    },
+    mounted() {
+      const meta = this.$route.meta
+      if(meta){
+        this.__cls = meta.cls||''
+      }
     }
   }
-}`
-
-const createScript = (str: string) => {
+</script>`
   return {
-    content: `<script>
-      export default ${str}
-    </script>`,
+    content: md,
     tagOpen: '<script>',
     type: 'script',
-    contentStripped: `export default ${str}`,
+    contentStripped: `export default ${md}`,
     tagClose: '</script>'
   }
 }
 
 export default {
-  md: createScript(md)
+  md: (id: string) => createScript(id)
 }
