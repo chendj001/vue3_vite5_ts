@@ -5,8 +5,10 @@ const md = `{
     }
   },
   mounted() {
-    //const meta = this.$route.meta
-    //this.__cls = meta.cls
+    const meta = this.$route.meta
+    if(meta){
+      this.__cls = meta.cls||''
+    }
   }
 }`
 

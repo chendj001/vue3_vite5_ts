@@ -3,6 +3,7 @@ import type {
   Markdown,
   MarkdownOptions as MarkdownBaseOptions
 } from '@vuepress/markdown'
+//@ts-ignore
 import MarkdownIt from 'markdown-it'
 import {
   anchorPlugin,
