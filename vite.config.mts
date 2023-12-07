@@ -10,11 +10,19 @@ import ViteComponents from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 // 组件命名
 import vueSetupExtend from 'vite-plugin-vue-setup-extend'
+// 渲染markdown
+import vueMd from './src/plugins/vueMdPlugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    vueMd({
+      shiki: {
+        theme: 'dark-plus'
+      }
+    }),
     vue({
+      include: [/(\.vue)$/, /\.md$/],
       script: {
         propsDestructure: true
       }
