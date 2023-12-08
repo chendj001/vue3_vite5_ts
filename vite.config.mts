@@ -3,7 +3,7 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-
+import { VitePWA } from 'vite-plugin-pwa'
 // 自动导入组件-sfc
 import ViteComponents from 'unplugin-vue-components/vite'
 // 自动导入引用
@@ -50,6 +50,11 @@ export default defineConfig({
         enabled: true,
         filepath: './.eslintrc-auto-import.json',
         globalsPropValue: true
+      }
+    }),
+    VitePWA({
+      registerType: 'autoUpdate', devOptions: {
+        enabled: true
       }
     })
   ],
