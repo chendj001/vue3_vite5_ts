@@ -12,7 +12,6 @@ import AutoImport from 'unplugin-auto-import/vite'
 import vueSetupExtend from 'vite-plugin-vue-setup-extend'
 // 渲染markdown
 import vueMd from './src/plugins/vueMdPlugin'
-
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -55,6 +54,25 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate', devOptions: {
         enabled: true
+      },
+      includeAssets: ['logo.svg'],
+      manifest: {
+        name: '双刃战意',
+        short_name: '双刃战意',
+        description: '双刃战意 描述',
+        theme_color: '#ffffff',
+        icons: [
+          {
+            src: 'logo.svg',
+            sizes: '192x192',
+            type: 'image/svg+xml'
+          },
+          {
+            src: 'logo.svg',
+            sizes: '512x512',
+            type: 'image/svg+xml'
+          }
+        ]
       }
     })
   ],
@@ -74,3 +92,5 @@ export default defineConfig({
     }
   }
 })
+
+
