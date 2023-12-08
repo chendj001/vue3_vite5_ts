@@ -16,6 +16,8 @@
     display: inline-flex;
     background: #fff;
     border-radius: 4px;
+    overflow: clip;
+    overflow-clip-margin: content-box;
   }
 }
 @mixin center($dir: null) {
@@ -27,4 +29,9 @@
     align-items: center;
     justify-content: center;
   }
+}
+@mixin avatar() {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
