@@ -1,2 +1,30 @@
-@use "sass:math";
-@use "@/scss/mixin/var.module" as *;
+@use 'sass:math';
+@use '@/scss/mixin/var.module' as *;
+
+@mixin grid() {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: $gridWidth;
+  height: $gridHeight;
+  background: seagreen;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 4px;
+  user-select: none;
+  &-col {
+    display: inline-flex;
+    background: #fff;
+    border-radius: 4px;
+  }
+}
+@mixin center($dir: null) {
+  @if ($dir== 'x') {
+    justify-content: center;
+  } @else if($dir== 'y') {
+    align-items: center;
+  } @else {
+    align-items: center;
+    justify-content: center;
+  }
+}

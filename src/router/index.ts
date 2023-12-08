@@ -18,6 +18,11 @@ const router = createRouter({
       path: '/md',
       name: 'md',
       component: () => import('@/md/help.md')
+    },
+    {
+      path: '/grid',
+      name: 'grid',
+      component: () => import('@/views/Grid.vue')
     }
   ]
 })
