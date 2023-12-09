@@ -4,7 +4,9 @@
       <div
         class="grid-col"
         style="grid-row: 1 / span 2; grid-column: 1 / span 2"
-      ></div>
+      >
+      <img src="https://avatars.githubusercontent.com/u/146858765?v=4" alt="">
+    </div>
     </div>
     <div class="grid">
       <div class="grid-col">
