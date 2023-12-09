@@ -5,4 +5,5 @@ declare module '*.md' {
   const Component: ComponentOptions
   export default Component
 }
+/// <reference types="vite-plugin-pwa/info" />
 /// <reference types="vite/client" />

@@ -53,7 +53,8 @@ export default defineConfig({
       }
     }),
     VitePWA({
-      registerType: 'autoUpdate', devOptions: {
+      registerType: 'autoUpdate', 
+      devOptions: {
         enabled: true
       },
       includeAssets: ['logo.svg'],
