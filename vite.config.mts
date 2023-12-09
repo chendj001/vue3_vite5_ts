@@ -14,6 +14,7 @@ import vueSetupExtend from 'vite-plugin-vue-setup-extend'
 import vueMd from './src/plugins/vueMdPlugin'
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: process.env.NODE_ENV == 'development' ? '/' : '/vue3_vite5_ts/',
   plugins: [
     vueMd({
       shiki: {
