@@ -53,10 +53,13 @@ export default defineConfig({
       }
     }),
     VitePWA({
-      registerType: 'autoUpdate', 
+      registerType: 'prompt', 
       devOptions: {
         enabled: true
       },
+      // workbox: {
+      //   cleanupOutdatedCaches: false
+      // },
       includeAssets: ['logo.svg'],
       manifest: {
         name: '双刃战意',
