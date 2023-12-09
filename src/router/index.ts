@@ -16,8 +16,24 @@ const router = createRouter({
     },
     {
       path: '/md',
-      name: 'md',
-      component: () => import('@/md/help.md')
+      component: () => import('@/views/Md.vue'),
+      children: [
+        {
+          path: '',
+          name: 'md',
+          component: () => import('@/md/index.md')
+        },
+        {
+          path: 'vue2Array',
+          name: 'vue2Array',
+          component: () => import('@/md/vue2_array.md')
+        },
+        {
+          path: 'vue2Error',
+          name: 'vue2Error',
+          component: () => import('@/md/vue2_error.md')
+        }
+      ]
     },
     {
       path: '/grid',
