@@ -22,6 +22,7 @@ onBeforeMount(async () => {
     immediate: true,
     onNeedRefresh,
   })
+  console.log('updateServiceWorker',updateServiceWorker)
 })
 </script>
 <template>
