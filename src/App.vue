@@ -26,7 +26,7 @@ onBeforeMount(async () => {
 </script>
 <template>
   <RouterView />
-  <div v-if="!needRefresh" class="pwa-toast " role="alertdialog" aria-labelledby="pwa-message">
+  <div v-if="needRefresh" class="pwa-toast " role="alertdialog" aria-labelledby="pwa-message">
     <div id="pwa-message" class="mb-3">
       New content available, click the reload button to update.
     </div>
