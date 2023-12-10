@@ -1,9 +1,24 @@
 <template>
   <div style="padding: 50px; gap: 10px; display: flex">
     <div class="grid">
-      <div class="grid-col" style="grid-row: 1 / span 2; grid-column: 1 / span 2">
-        <img src="https://avatars.githubusercontent.com/u/146858765?v=4" alt="">
+      <div class="grid-col" style="grid-row:1/span 2; grid-column: 1/span 2 ">
+        <div
+          style="display: grid;grid-template-columns: repeat(2, 1fr);grid-template-rows: repeat(2, 1fr);gap:4px;padding: 4px;background-color: #fff;">
+          <div style="grid-column: 1/span 1;grid-row: 1/span 1;">
+            <img class="grid-col-img" src="https://avatars.githubusercontent.com/u/146858765?v=4" alt="">
+          </div>
+          <div style="grid-column: 2/span 1;grid-row: 1/span 1;">
+            <img class="grid-col-img" src="https://avatars.githubusercontent.com/u/146858765?v=4" alt="">
+          </div>
+          <div style="grid-column: 1/span 1;grid-row: 2/span 1;">
+            <img class="grid-col-img" src="https://avatars.githubusercontent.com/u/146858765?v=4" alt="">
+          </div>
+          <div style="grid-column: 2/span 1;grid-row: 2/span 1;">
+            <img class="grid-col-img" src="https://avatars.githubusercontent.com/u/146858765?v=4" alt="">
+          </div>
+        </div>
       </div>
+
     </div>
     <div class="grid" style="--col:8;--row:4">
       <div class="grid-col">
@@ -47,6 +62,14 @@
   background: $theme;
   @include grid();
 
+  &-col {
+    &-img {
+      display: block;
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+
   &-link {
     display: flex;
     width: 100%;
@@ -55,7 +78,7 @@
     &-img {
       display: block;
       width: 100%;
-      height: 100%
+      height: 100%;
     }
   }
 }
