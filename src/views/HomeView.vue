@@ -11,7 +11,11 @@
           src="https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-avt-0015_a86e56c980b7955312b5702a547a4cf0~c5_300x300.jpeg?from=2956013662"
           alt="" />
       </div>
-      <div class="grid-col"></div>
+      <div class="grid-col">
+        <a class="grid-link" href="https://www.bilibili.com/" target="_blank">
+          <img class="grid-link-img" src="/bilibili.svg" alt="">
+        </a>
+      </div>
       <div class="grid-col"></div>
       <div class="grid-col" style="grid-column: 1/-1; grid-row: 2/-1">
         <div class="github-content" style="width: 100%;">
@@ -42,6 +46,18 @@
 .grid {
   background: $theme;
   @include grid();
+
+  &-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    &-img {
+      display: block;
+      width: 100%;
+      height: 100%
+    }
+  }
 }
 
 .github {
@@ -90,6 +106,7 @@
       color: rgb(110, 119, 129);
     }
   }
+
 }
 
 .avatar {
