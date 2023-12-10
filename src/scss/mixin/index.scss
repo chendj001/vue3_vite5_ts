@@ -2,9 +2,11 @@
 @use '@/scss/mixin/var.module' as *;
 
 @mixin grid() {
+  --col:7;
+  --row:3;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(var(--col), 1fr);
+  grid-template-rows: repeat(var(--row), 1fr);
   width: $gridWidth;
   height: $gridHeight;
   background: seagreen;
