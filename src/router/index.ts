@@ -32,6 +32,11 @@ const router = createRouter({
           path: 'vue2Error',
           name: 'vue2Error',
           component: () => import('@/md/vue2_error.md')
+        },
+        {
+          path: 'vueComponent',
+          name: 'vueComponent',
+          component: () => import('@/md/vue3/组件编写.md')
         }
       ]
     },
