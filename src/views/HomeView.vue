@@ -16,7 +16,7 @@
       <div class="grid-col" style="grid-column: 1/-1; grid-row: 2/-1">
         <div class="github-content" style="width: 100%;">
           <a class="github-item" target="_blank"
-            href="https://www.douyin.com/user/MS4wLjABAAAAwCF9lNamTpx-8ENFQauLVaKucBuRjO3VrRUDWf3BN3s?modal_id=7291961030303862066">🌵大明朱三爷</a>
+            href="https://www.douyin.com/user/MS4wLjABAAAAwCF9lNamTpx-8ENFQauLVaKucBuRjO3VrRUDWf3BN3s?modal_id=7291961030303862066">🌵大明朱三爷2</a>
           <div class="github-item">👀 大明指路人</div>
           <div class="github-item">🌱 穿越大秦</div>
         </div>
@@ -27,7 +27,7 @@
       <div class="github-content">
 
         <div class="github-item">chmod -R 755</div>
-        <router-link class="github-item" :to="{ name: 'md' }" target="_blank">👀 Md</router-link>
+        <router-link class="github-item" :to="{ name: 'md' }" target="_blank">👀 Md文档</router-link>
         <router-link class="github-item" :to="{ name: 'vue2Array' }" target="_blank">🌱 数组操作</router-link>
         <router-link class="github-item" :to="{ name: 'vue2Error' }" target="_blank">💞️ 常见错误</router-link>
       </div>
