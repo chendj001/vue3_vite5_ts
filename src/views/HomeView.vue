@@ -31,7 +31,16 @@
           <img class="grid-link-img" src="/bilibili.svg" alt="">
         </a>
       </div>
-      <div class="grid-col"></div>
+      <div class="grid-col">
+        <a class="grid-link" href="https://juejin.cn/" target="_blank">
+          <img class="grid-link-img" src="/juejin.svg" alt="">
+        </a>
+      </div>
+      <div class="grid-col" style="padding: 3px;background-color: #fff;">
+        <a class="grid-link" href="https://hellogithub.com/" target="_blank">
+          <img class="grid-link-img" src="/hellogithub.png" alt="">
+        </a>
+      </div>
       <div class="grid-col" style="grid-column: 1/-1; grid-row: 2/-1">
         <div class="github-content" style="width: 100%;">
           <a class="github-item" target="_blank"
