@@ -83,7 +83,7 @@ export default defineConfig({
         runtimeCaching: [
           {
             // 抖音、github的头像
-            urlPattern: /^https:\/\/(p3-pc\.douyinpic|avatars)/,
+            urlPattern: /^https:\/\/(p3-pc\.douyinpic|avatars|v2.vuepress)/,
             handler: 'CacheFirst',
             options: {
               cacheName: 'avatars-cache',
