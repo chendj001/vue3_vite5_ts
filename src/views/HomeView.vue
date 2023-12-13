@@ -50,6 +50,11 @@
         </div>
       </div>
     </div>
+    <div class="grid" style="padding: 0;">
+      <div class="grid-col" style="grid-column: 1/-1; grid-row: 1/-1">
+      <img style="object-fit: cover;width: 100%;" src="https://s3.mashiro.top/mstdn/site_uploads/files/000/000/002/original/forest.gif" alt="">
+      </div>
+    </div>
     <div class="github">
       <div class="github-header">chendj001/README.md</div>
       <div class="github-content">

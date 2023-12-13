@@ -78,6 +78,24 @@ export default defineConfig({
             type: 'image/svg+xml'
           }
         ]
+      },
+      workbox: {
+        runtimeCaching: [
+          {
+            // 抖音、github的头像
+            urlPattern: /^https:\/\/(p3-pc\.douyinpic|avatars)/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'avatars-cache',
+              expiration: {
+                // 数量
+                maxEntries: 50,
+                // 缓存时间-一周
+                maxAgeSeconds: 60 * 60 * 24 * 7
+              }
+            }
+          }
+        ]
       }
     })
   ],
@@ -97,5 +115,3 @@ export default defineConfig({
     }
   }
 })
-
-
