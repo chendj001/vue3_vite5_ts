@@ -31,5 +31,5 @@ auto-imports.d.ts
 components.d.ts
 .eslintrc-auto-import.json
 dist
-dev-dist
-dev-dist/**.js
+dev-dist/*
+.vite

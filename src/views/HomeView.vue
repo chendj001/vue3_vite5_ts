@@ -69,6 +69,11 @@
           <img class="grid-link-img" src="/hellogithub.png" alt="" />
         </a>
       </div>
+      <div class="grid-col">
+        <a class="grid-link" href="https://www.zhihu.com/" target="_blank">
+          <img class="grid-link-img" src="/zhihu.png" alt="" />
+        </a>
+      </div>
       <div class="grid-col" style="grid-column: 1/-1; grid-row: 2/-1">
         <div class="github-content" style="width: 100%">
           <a
