@@ -55,6 +55,13 @@
         />
       </div>
       <div class="grid-col">
+        <img
+          class="avatar"
+          src="https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-avt-0015_39693928502f941fa5c29c8cb66cf731~c5_300x300.jpeg?from=2956013662"
+          alt=""
+        />
+      </div>
+      <div class="grid-col">
         <a class="grid-link" href="https://www.bilibili.com/" target="_blank">
           <img class="grid-link-img" src="/bilibili.svg" alt="" />
         </a>
