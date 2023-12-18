@@ -48,20 +48,23 @@
     </div>
     <div class="grid" style="--col: 8; --row: 4">
       <div class="grid-col">
-        <a href="https://www.douyin.com/user/MS4wLjABAAAA73oZ2PQJCjVHtY-ctBQNXYrF1b_tmMnGsg9qyKGmGvk" target="_blank">
+        <img
+          class="avatar"
+          src="https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-avt-0015_a86e56c980b7955312b5702a547a4cf0~c5_300x300.jpeg?from=2956013662"
+          alt=""
+        />
+      </div>
+      <div class="grid-col">
+        <a
+          href="https://www.douyin.com/user/MS4wLjABAAAA73oZ2PQJCjVHtY-ctBQNXYrF1b_tmMnGsg9qyKGmGvk"
+          target="_blank"
+        >
           <img
             class="avatar"
-            src="https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-avt-0015_a86e56c980b7955312b5702a547a4cf0~c5_300x300.jpeg?from=2956013662"
+            src="https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-avt-0015_39693928502f941fa5c29c8cb66cf731~c5_300x300.jpeg?from=2956013662"
             alt=""
           />
         </a>
-      </div>
-      <div class="grid-col">
-        <img
-          class="avatar"
-          src="https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-avt-0015_39693928502f941fa5c29c8cb66cf731~c5_300x300.jpeg?from=2956013662"
-          alt=""
-        />
       </div>
       <div class="grid-col">
         <a class="grid-link" href="https://www.bilibili.com/" target="_blank">
