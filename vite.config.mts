@@ -19,6 +19,12 @@ export default defineConfig({
     vueMd({
       shiki: {
         theme: 'dark-plus'
+      },
+      importCode: (code: string) => {
+        let root = new URL('./src', import.meta.url).pathname
+        code = code.replace(/@src/gi, root.slice(1))
+        code = code.replace(/\~src/gi, root)
+        return code
       }
     }),
     vue({

@@ -36,8 +36,10 @@ import MarkdownItShiki from 'markdown-it-shiki'
 import type { Options as shiki } from 'markdown-it-shiki'
 import markdownItcontainer from '@vuepress/plugin-container'
 import { containerOptions } from './container'
+//@ts-ignore
 export interface MarkdownOptions extends MarkdownBaseOptions {
   shiki?: false | shiki
+  importCode?: (code: string) => string
 }
 export const createMarkdown = ({
   anchor,

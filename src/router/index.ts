@@ -37,6 +37,11 @@ const router = createRouter({
           path: 'vueComponent',
           name: 'vueComponent',
           component: () => import('@/md/vue3/组件编写.md')
+        },
+        {
+          path: 'icon',
+          name: 'icon',
+          component: () => import('@/md/css3/icon.md')
         }
       ]
     },

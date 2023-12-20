@@ -1,6 +1,7 @@
 import type { PluginOption } from 'vite'
 import { createMarkdown } from './createMarkdown'
 import type { MarkdownOptions } from './createMarkdown'
+import { fileURLToPath, URL } from 'node:url'
 import script from './script'
 const vitePluginMd = (opts?: MarkdownOptions): PluginOption => {
   const md = createMarkdown(opts)
@@ -9,6 +10,9 @@ const vitePluginMd = (opts?: MarkdownOptions): PluginOption => {
     enforce: 'pre',
     transform(code, id) {
       if (id.endsWith('.md')) {
+        if (opts?.importCode) {
+          code = opts.importCode(code)
+        }
         const env: any = {}
         const html = md?.render(code, env)
         const { sfcBlocks } = env
