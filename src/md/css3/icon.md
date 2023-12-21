@@ -14,7 +14,6 @@ let name = '---'
   <div class="icon-fill"><img style="width:80px" src="/dkbb.png" /></div>
 </div>
 
-@[code css](@src/md/css3/style.css)
 
 ```html
 <div class="icon">
