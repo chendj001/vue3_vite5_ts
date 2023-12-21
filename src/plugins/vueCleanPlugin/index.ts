@@ -33,7 +33,7 @@ function cleanFiles(dirPath: any) {
 const cleanPlugin = (_opt: any) => {
   options = Object.assign(
     {
-      targetFiles: /^z-studio-web|\.zip$|dist/
+      targetFiles: /dev-dist|dist/
     },
     _opt
   )

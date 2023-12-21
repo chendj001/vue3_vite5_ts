@@ -1,0 +1,44 @@
+name: 'GitHub 推送'
+description: '将本地更改推送到 GitHub 存储库'
+author: 'chendj001'
+branding:
+  icon: upload-cloud
+  color: green
+inputs:
+  github_token:
+    description: 'GitHub Token 或 PAT Token'
+    required: false
+    default: ${{ github.token }}
+  github_url:
+    description: 'GitHub URL 或 GitHub Enterprise URL'
+    required: false
+    default: ${{ github.server_url }}
+  ssh:
+    description: '指定是否使用 SSH'
+    required: false
+  repository:
+    description: '要推送的存储库名称。默认或空值表示当前 GitHub 存储库 (${GITHUB_REPOSITORY})'
+    default: ''
+    required: false
+  branch:
+    description: '要推送更改的目标分支'
+    required: false
+  force:
+    description: '确定是否使用强制推送'
+    required: false
+  force_with_lease:
+    description: '确定是否使用带租约的强制推送'
+    required: false
+  atomic:
+    description: '确定是否使用原子推送，默认为 true'
+    required: false
+  tags:
+    description: '确定是否使用 --tags'
+    required: false
+  directory:
+    description: '推送之前要切换到的目录。'
+    required: false
+    default: '.'
+runs:
+  using: 'node20'
+  main: 'start.js'
