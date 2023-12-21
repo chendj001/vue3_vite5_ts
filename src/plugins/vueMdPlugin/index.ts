@@ -1,7 +1,6 @@
 import type { PluginOption } from 'vite'
 import { createMarkdown } from './createMarkdown'
 import type { MarkdownOptions } from './createMarkdown'
-import { fileURLToPath, URL } from 'node:url'
 import script from './script'
 const vitePluginMd = (opts?: MarkdownOptions): PluginOption => {
   const md = createMarkdown(opts)

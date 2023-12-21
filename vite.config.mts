@@ -12,6 +12,8 @@ import AutoImport from 'unplugin-auto-import/vite'
 import vueSetupExtend from 'vite-plugin-vue-setup-extend'
 // 渲染markdown
 import vueMd from './src/plugins/vueMdPlugin'
+//
+import cleanPlugin from './src/plugins/vueCleanPlugin'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: process.env.NODE_ENV == 'development' ? '/' : '/vue3_vite5_ts/',
@@ -103,6 +105,9 @@ export default defineConfig({
           }
         ]
       }
+    }),
+    cleanPlugin({
+      targetFiles: /dev-dist|dist/
     })
   ],
   resolve: {
