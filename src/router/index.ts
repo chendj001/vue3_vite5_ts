@@ -42,6 +42,11 @@ const router = createRouter({
           path: 'icon',
           name: 'icon',
           component: () => import('@/md/css3/icon.md')
+        },
+        {
+          path: 'jsdoc',
+          name: 'jsdoc',
+          component: () => import('@/md/jsdoc.md')
         }
       ]
     },
