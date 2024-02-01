@@ -14,20 +14,25 @@ import vueSetupExtend from 'vite-plugin-vue-setup-extend'
 import vueMd from './src/plugins/vueMdPlugin'
 //
 import cleanPlugin from './src/plugins/vueCleanPlugin'
+
+import VitePluginVitepress from 'vite-plugin-vitepress'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: process.env.NODE_ENV == 'development' ? '/' : '/vue3_vite5_ts/',
   plugins: [
-    vueMd({
-      shiki: {
-        theme: 'dark-plus'
-      },
-      importCode: (code: string) => {
-        let root = new URL('./src', import.meta.url).pathname
-        code = code.replace(/@src/gi, root.slice(1))
-        code = code.replace(/\~src/gi, root)
-        return code
-      }
+    // vueMd({
+    //   shiki: {
+    //     theme: 'dark-plus'
+    //   },
+    //   importCode: (code: string) => {
+    //     let root = new URL('./src', import.meta.url).pathname
+    //     code = code.replace(/@src/gi, root.slice(1))
+    //     code = code.replace(/\~src/gi, root)
+    //     return code
+    //   }
+    // }),
+    VitePluginVitepress({
+      
     }),
     vue({
       include: [/(\.vue)$/, /\.md$/],
@@ -63,7 +68,7 @@ export default defineConfig({
     VitePWA({
       registerType: 'prompt',
       devOptions: {
-        enabled: true
+        enabled: false
       },
       // workbox: {
       //   cleanupOutdatedCaches: false

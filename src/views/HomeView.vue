@@ -108,33 +108,7 @@
         />
       </div>
     </div>
-    <div class="github">
-      <div class="github-header">chendj001/README.md</div>
-      <div class="github-content">
-        <div class="github-item">chmod -R 755</div>
-        <router-link class="github-item" :to="{ name: 'md' }" target="_blank"
-          >👀 Md文档</router-link
-        >
-        <router-link
-          class="github-item"
-          :to="{ name: 'vue2Array' }"
-          target="_blank"
-          >🌱 数组操作</router-link
-        >
-        <router-link
-          class="github-item"
-          :to="{ name: 'vue2Error' }"
-          target="_blank"
-          >💞️ 常见错误</router-link
-        >
-        <router-link
-          class="github-item"
-          :to="{ name: 'vueComponent' }"
-          target="_blank"
-          >🎍 组件编写</router-link
-        >
-      </div>
-    </div>
+
   </div>
 </template>
 

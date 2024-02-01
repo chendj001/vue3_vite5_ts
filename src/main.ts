@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import "vite-plugin-vitepress/dist/theme"
 // @ts-ignore
 import '@/scss/app.scss'
 import App from '@/App.vue'
